@@ -12,7 +12,7 @@ namespace task_2
         static void Main(string[] args)
         {
             StreamReader sr = new StreamReader("input.txt"); // используется для того чтобы считывать текст
-            string[] s = sr.ReadToEnd().Split(); // считываем текст
+            string[] s = sr.ReadToEnd().Split(); //  массив строк -считываем текст и сплит для того чтобы разделить числа друг от друга
             StreamWriter sw = new StreamWriter("output.txt"); // для того чтобы записывать текст
             List<int> ans = new List<int>(); // создаем лист для праймов 
             for (int i = 0; i < s.Count(); i++) // проходимся по всем числам(строкам) 
@@ -20,7 +20,7 @@ namespace task_2
                 int b; // переменная для хранения числа
                 int pr = 0; // 0 если нет делители 
                 b = int.Parse(s[i]); // переводим из строки в число 
-                for (int j = 2; j <= (int)Math.Sqrt(b); j++) // цикл для проверки на прайм
+                for (int j = 2; j <b; j++) // цикл для проверки на прайм
                 {
                     if (b % j == 0) // если есть делитель 
                     {
