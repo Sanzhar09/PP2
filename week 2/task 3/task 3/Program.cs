@@ -32,7 +32,7 @@ namespace Task3
         }
         static void Main(string[] args)
         {
-            DirectoryInfo path = new DirectoryInfo("D:/mashok/KBTU/PP2/");
+            DirectoryInfo path = new DirectoryInfo("C:\pp2\week 2\task 3\");
             DirectoryTree(path, 0);
             Console.ReadKey();
         }
